@@ -1,0 +1,67 @@
+#logo {
+    height:60px;
+    width:200px;
+}
+
+.active {
+    color: blue;
+}
+
+#sidebar {
+  width: inherit;
+  min-width: 220px;
+  max-width: 220px;
+  background-color:#f5f5f5;
+  float: left;
+  height:100vh;
+  position:relative;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#main {
+  margin: 10px;
+  height:100vh;
+  overflow:auto;
+}
+body,html,.row-offcanvas {
+  height:100vh;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.sidebar-form {
+    margin: 10px;
+}
+.selected-data {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        background-color: #dae2ef;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+}
+
+
+.square {
+    background: #000;
+    width: 1vw;
+    height: 1vw;
+}
+
+.unselected-data {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+}
+
+.navbar-default .navbar-nav>.active> a, 
+.navbar-default .navbar-nav>.active> a:focus, 
+.navbar-default .navbar-nav>.active> a:hover {
+  border-bottom: 10px solid #4259f4;
+  color: #4259f4;
+}
+

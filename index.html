@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Optumsoft</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">OptumSoft</a>
+
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">DASHBOARD</a></li>
+        <li class="active"><a href="#">SENSORS</a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">SITES <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Drafts</a></li>
+                <li><a href="#">Sent Items</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Trash</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">ADMIN <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Drafts</a></li>
+                <li><a href="#">Sent Items</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Trash</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">PROFILE <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Drafts</a></li>
+                <li><a href="#">Sent Items</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Trash</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-envelope" style="font-size:24px"></i></a></li>
+        <li>ff</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+</div><!--/.navbar -->
+
+
+<div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+    <div class="sidebar-form">
+        <div class="col-md-12 text-center">
+            <div class="btn-group" id="dual-button">
+                <button type="button" class="btn btn-primary">Units</button>
+                <button type="button" class="btn btn-default">Nodes</button>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Unit Search">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Metric Search">
+            </div>
+        </form>
+        <div class="form-group">
+            <select class="form-control" id="sel1">
+                <option>All</option>
+                <option>Some</option>
+                <option>Few</option>
+            </select>
+        </div>
+    </div>
+    <div class='selected-data'>
+        TestNode1 Suction Temperature
+        <div>
+            <label><input type="checkbox" value="" checked></label>
+        </div>
+    </div>
+    <div class='selected-data'>
+        TestNode1 Suction Power
+        <div>
+            <label><input type="checkbox" value="" checked></label>
+        </div>
+    </div>
+    <div class='selected-data'>
+        <a href="" id="deselect-all">Unselect All</a>
+    </div>
+    <div class='unselected-data'>
+        TestNode1 Suction Current
+        <div>
+            <label><input type="checkbox"></label>
+        </div>
+    </div>
+    <div class='unselected-data'>
+        TestNode1 Suction Pressure
+        <div>
+            <label><input type="checkbox"></label>
+        </div>
+    </div>
+    <div class='unselected-data'>
+        TestNode1 Suction Humidity
+        <div>
+            <label><input type="checkbox" class="checkbox"></label>
+        </div>
+    </div>
+    <div class='unselected-data'>
+        <a href="" id="select-all">Select All</a>
+    </div>
+  </div>
+
+
+    <div id="main">
+        <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+    </div>
+</div>
+</body>
+</html>
